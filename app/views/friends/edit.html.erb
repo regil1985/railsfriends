@@ -1,0 +1,15 @@
+<h1>Editing friend</h1>
+
+<br/>
+
+<%= render "form", friend: @friend %>
+
+<br>
+
+<div style="display:inline">
+  <%= button_to "Show", @friend, class:"btn btn-warning" %>
+  <br>
+  <%= button_to "Delete", @friend, :method => :delete, class:"btn btn-danger" %>
+  <br>
+  <%= button_to "Back", friends_path, class:"btn btn-warning" %>
+</div>
